@@ -1,4 +1,4 @@
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-Br">
 <head>
@@ -6,9 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>America do Sul</title>
+    <link rel="stylesheet" href="{% static 'americaDoSul/style.css'%}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
-    <a href="{% url 'brasil' %}">brasil</a>
-    <a href="{% url 'argentina' %}">argentina</a>
+    <header class="container-header">
+        <div class="container-header-itens">
+            <img src="../../static/americaDoSul/imgs/logo-america.png" alt="">
+        </div>
+        <div class="container-header-itens">
+            <h1>América do Sul</h1>
+        </div>
+        <div class="container-header-itens">
+            <span class="material-symbols-outlined button">
+                menu
+            </span>
+        </div>
+        <nav class="container-header-navbar">
+            <a href="{% url 'brasil' %}">Brasil</a>
+            <a href="{% url 'argentina' %}">Argentina</a>
+        </nav>
+    </header>
+    <main>
+        <section class="container-main">
+            <div class="container-main-img">
+                <img src="../../static/americaDoSul/imgs/america.png" alt="">
+            </div>
+            <div class="container-main-text">
+                <h2>
+                    Com uma extensão de cerca de 17,8 milhões de km², a América do Sul comporta 6% da população mundial dividida em 12 países e 7 territórios. São eles a Argentina, Bolívia, Brasil, Chile, Colômbia, Equador, Guiana, Paraguai, Peru, Suriname, Uruguai e Venezuela e, os territórios da Guiana Francesa, Ilha de Páscoa, Ilhas Galápagos, Ilhas Geórgia e Sandwich e Ilhas Malvinas. Limita-se ao norte com a América Central, à leste com o oceano atlântico e à oeste com o oceano pacífico. Se aventure em nosso site e conheça alguns países desse belissimo continente
+                </h2>
+            </div>
+        </section>
+    </main>
+
 </body>
+<script src="../../static/americaDoSul/js/script.js"></script>
 </html>
