@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
 
 html{
     scroll-behavior: smooth;
@@ -246,6 +247,105 @@ body{
 .container-main-info{
     width: 50%;
     height: 100%;
+}
+
+.container-main-info-title{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.container-main-info-title h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    color: #4169E1;
+
+}
+
+.container-main-info-content{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-itens{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-itens h2{
+    margin-top: -30%;
+    margin-bottom: 5%;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    width: 70%;
+    text-align: center;
+    color: #4169E1;
+}
+.content-itens a{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    border-radius: 10px;
+    background-color: #4169E1;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#container-content-more{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.container-content-more-one, .container-content-more-two{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-content-more-one img{
+    width: 50%;
+    height: 50%;
+    margin-bottom: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.container-content-more-two img{
+    width: 70%;
+    height: 40%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.container-content-more-two, .container-content-more-one p{
+    width: 80%;
+    font-weight: bold;
+    font-size: 20px;
+    color: #4169E1;
+    font-family: 'inter' ,cursive;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+
+.container-content-more-two h2{
+    font-family: 'inter' ,cursive;
 }
 @keyframes openMenu{
     0%{
